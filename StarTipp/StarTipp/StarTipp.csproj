@@ -196,6 +196,23 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DataContext\201511202053411_InitialCreate.cs" />
+    <Compile Include="DataContext\201511202053411_InitialCreate.Designer.cs">
+      <DependentUpon>201511202053411_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataContext\Configuration.cs" />
+    <Compile Include="DataContext\StarTippDb.cs" />
+    <Compile Include="Entities\BettingGroup.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\Game.cs" />
+    <Compile Include="Entities\GameBet.cs" />
+    <Compile Include="Entities\Gamer.cs" />
+    <Compile Include="Entities\Player.cs" />
+    <Compile Include="Entities\PlayoffFormat.cs" />
+    <Compile Include="Entities\PointPolicy.cs" />
+    <Compile Include="Entities\Stage.cs" />
+    <Compile Include="Entities\StageType.cs" />
+    <Compile Include="Entities\Tournement.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -208,6 +225,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="DataContext\Migration.txt" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -271,6 +289,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataContext\201511202053411_InitialCreate.resx">
+      <DependentUpon>201511202053411_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
